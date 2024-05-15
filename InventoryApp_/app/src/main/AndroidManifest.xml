@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Declaring the required permissions-->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/inventory_tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InventoryApp_Arica_Bryant"
+        tools:targetApi="31">
+        <activity
+            android:name=".ScreenSMS"
+            android:exported="true"
+            android:label="@string/SMS_Notifications"
+            android:theme="@style/Theme.InventoryApp_Arica_Bryant" />
+        <activity
+            android:name=".ScreenItem"
+            android:exported="true"
+            android:label="@string/Item_Editor"
+            android:theme="@style/Theme.InventoryApp_Arica_Bryant" />
+        <activity
+            android:name=".Inventory"
+            android:exported="true"
+            android:label="@string/Inventory"
+            android:theme="@style/Theme.InventoryApp_Arica_Bryant" />
+        <activity
+            android:name=".Register"
+            android:exported="true"
+            android:label="@string/Register"
+            android:theme="@style/Theme.InventoryApp_Arica_Bryant" />
+        <activity
+            android:name=".ScreenLogin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

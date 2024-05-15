@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".ScreenItem">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/inventory_tracker"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appTitle"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="@string/enter_the_item_name" />
+
+    <EditText
+        android:id="@+id/editItemName"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/addText1"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentEnd = "true"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/name"
+        android:autofillHints="name" />
+
+    <TextView
+        android:id="@+id/addText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItemName"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:text="@string/enter_the_item_quantity" />
+
+    <EditText
+        android:id="@+id/editItemQuantity"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/addText2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentEnd = "true"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/quantity"
+        android:autofillHints="quantity" />
+
+    <Button
+        android:id="@+id/increaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItemQuantity"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lightGreen"
+        android:layout_alignParentStart="true"
+        android:text="@string/increase"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/decreaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editItemQuantity"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/lightGreen"
+        android:layout_toEndOf="@id/increaseButton"
+        android:text="@string/decrease"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/increaseButton"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/lightGreen"
+        android:layout_toEndOf="@id/increaseButton"
+        android:text="@string/save"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".ScreenSMS">
+
+    <TextView
+        android:id="@+id/smsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/enable_sms_notifications"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/smsDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smsTitle"
+        android:layout_marginTop="50dp"
+        android:text="@string/enable_sms_permissions_to_be_notified_when_an_inventory_item_is_low_on_stock_click_the_button_below_to_grant_permission_you_may_revoke_access_at_any_time_from_your_device_s_settings"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/smsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lightGreen"
+        android:layout_below="@+id/smsDescription"
+        android:layout_marginTop="20dp"
+        android:text="@string/enable_sms"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/backButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smsButton"
+        android:layout_marginTop="378dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/lightGreen"
+        android:text="@string/back"
+        android:textSize="20sp" />
+
+</RelativeLayout>
